@@ -1,0 +1,263 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #1a5083;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1a5083;
+}
+
+body {
+  margin: 0;
+  display: block;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  text-align: center;
+  line-height: 1.1;
+}
+h2{
+  margin-left:2rem;
+  margin-bottom: 0rem;
+}
+
+p{
+    margin-left: 2rem;
+}
+nav {
+  background-color: #1a5083;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+  color: #e0e0e0;
+}
+
+footer {
+  background-color: #1a5083;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a5083;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  align-content: center;
+  justify-content: center;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.carousel a {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.carousel img {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.latest-posts article {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.plans div {
+  background-color: #e9ecef;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+.plans div:hover {
+  background-color: #1a5083;
+  color: white;
+}
+.plans div a:hover {
+  color: white;
+}
+
+.discounts {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.discounts a {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discounts img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.about {
+  margin: 20px 0;
+}
+
+.about section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team div {
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.team img {
+  max-width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.contact h2{
+  text-align: center;
+}
+
+form {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+form div{
+  margin-top: 1rem;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #1a508356;
+  color: black;
+}
+form button{
+  margin: 1rem 0rem;
+}
+form textarea {
+  resize: vertical;
+  min-width: 300px;
+  min-height: 100px;
+}
+
+div .rrss p{
+  text-align: center;
+}
+
+div .rrss li{
+  list-style: none;
+  text-align: center;
+}
